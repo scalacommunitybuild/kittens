@@ -39,7 +39,7 @@ lazy val commonSettings = Seq(
     "org.typelevel"   %% "alleycats-core" % catsVersion,
     "com.chuusai"     %% "shapeless"      % "2.3.3",
     "org.typelevel"   %% "cats-testkit"   % catsVersion % "test",
-    compilerPlugin("org.spire-math" %% "kind-projector" % "0.9.9")
+    compilerPlugin("org.typelevel" %% "kind-projector" % "0.13.2" cross CrossVersion.full)
   ),
   scmInfo :=
     Some(ScmInfo(
